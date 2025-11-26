@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "dnxchat:build:production"
+              "browserTarget": "dnxia:build:production"
             },
             "development": {
-              "browserTarget": "dnxchat:build:development"
+              "browserTarget": "dnxia:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "dnxchat:build"
+            "browserTarget": "dnxia:build"
           }
         },
         "test": {
