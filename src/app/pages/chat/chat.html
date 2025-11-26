@@ -1,0 +1,26 @@
+<div class="chat-container">
+
+  <div class="messages">
+    <div
+      *ngFor="let msg of messages"
+      class="msg"
+      [class.user]="msg.from === 'user'"
+      [class.ai]="msg.from === 'ai'"
+    >
+      {{ msg.text }}
+    </div>
+
+    <div *ngIf="loading" class="loading">Pensando...</div>
+  </div>
+
+  <div class="input-box">
+    <input
+      type="text"
+      [(ngModel)]="prompt"
+      placeholder="Escribe un mensaje…"
+      (keyup.enter)="send()"
+    />
+    <button (click)="send()">Enviar</button>
+  </div>
+
+</div>
