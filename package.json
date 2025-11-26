@@ -2,7 +2,7 @@
   "name": "dnxia",
   "version": "0.0.0",
   "outputPath": "dist/chat-ia",
-  "baseHref": "/",
+  "baseHref": "/dnxia/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
