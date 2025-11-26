@@ -93,7 +93,11 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/dnxia/",
+            "dir": "dist/dnxia" 
+          }
         }
       }
     }
